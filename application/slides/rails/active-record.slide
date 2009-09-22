@@ -1,0 +1,15 @@
+<h1>Active Record (Model)</h1>
+
+<p>Automatically maps between tables, attributes, and columns.</p>
+<p>Given this table:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> entries <span class="op">(</span></div>
+    <div>&nbsp;&nbsp;id int<span class="op">(</span><span class="number">11</span><span class="op">)</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">auto_increment</span><span class="op">,</span></div>
+    <div>&nbsp;&nbsp;name varchar<span class="op">(</span><span class="number">255</span><span class="op">)</span><span class="op">,</span></div>
+    <div>&nbsp;&nbsp;comments varchar<span class="op">(</span><span class="number">255</span><span class="op">)</span><span class="op">,</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">PRIMARY</span> <span class="keyword">KEY</span> <span class="op">(</span>id<span class="op">)</span></div>
+    <div><span class="op">)</span><span class="op">;</span></div>
+  </div>
+</div>

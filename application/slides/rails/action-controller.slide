@@ -1,0 +1,17 @@
+<h1>Action Controller</h1>
+
+<ul>
+  <li>Handles the entire request cycle</li>
+  <li>Actions are methods</li>
+  <li>Instance variables are passed to the view</li>
+</ul>
+
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">class</span> GuestbookController <span class="op">&lt;</span> ActionController<span class="op">::</span>Base</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> index</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">@</span>entries <span class="op">=</span> Entries<span class="op">.</span>find_all</div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+  </div>
+</div>

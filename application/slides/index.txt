@@ -1,0 +1,206 @@
+#
+# Ruby and Rails Slideshow
+#
+
+#Can understand interest: Rails is taking off this year
+#taking-off.slide
+#* Prominent names taking on Rails projects (Adaptive Path, James Duncan 
+#  Davidson, Dave Thomas, A List Apart, "the guy from Blogger")
+#taking-off-2.slide
+#* Developers interested in exploring Ajax are looking at Rails because of 
+#  its early lead among frameworks with well-implemented Ajax support
+#taking-off-3.slide
+#* Its clean syntax and helpful conventions encourage experimentation -- so 
+#  lots of people are trying it and talking about their results
+#taking-off-4.slide
+
+# our credentials
+#credentials.slide
+
+# points we'll cover
+#outline.slide
+
+# interrupt us
+#please-disturb.slide
+
+# What is Ruby?
+# A dynamic, object-oriented programming language with:
+# -- a strong focus on simplicity and productivity
+# -- an elegant, natural syntax
+# -- roots in Lisp, Perl, and Smalltalk
+# Created by Matz
+whats-ruby.slide
+
+# Super Clean Syntax
+# -- Ruby is purely object-oriented
+# -- Everything is an object--even strings and numbers!
+# -- code sample
+syntax.slide
+
+# Classes & Methods
+# -- Classes begin with `class` and end with `end`.
+# -- Methods begin with `def` and end with `end`.
+  syntax/classes.slide
+  syntax/classes-2.slide
+
+# If statements
+# -- code samples
+  syntax/if-statements.slide
+  syntax/if-statements-2.slide
+
+# Case Statements
+# -- code sample
+  syntax/case-statements.slide
+
+# Regular Expressions
+# -- full support for Perl style regular expressions
+# -- code sample
+  syntax/regular-expressions.slide
+  syntax/regular-expressions-2.slide
+
+# Blocks
+# -- blocks are like anonymous methods
+# -- blocks are closures
+# -- code sample
+  syntax/blocks.slide
+
+# Yield to the Block
+# -- Use yield from within a method to hand control over to a block
+# -- code sample
+  syntax/blocks-2.slide
+
+# Make Your Own Block (p2)
+# -- Use yield to make your own block
+# -- code sample
+  syntax/blocks-3.slide
+
+# Ruby is Highly Dynamic
+# -- Dynamic typing (vs. static)
+# -- Full support for introspection
+# -- Support for Method Redefinition
+# -- Create your own domain specific langauge
+# -- Modules vs. Inheritance
+# -- Method-Missing, etc... is cool!
+dynamic.slide
+
+# Dynamic Typing
+# -- if it quacks like a duck...
+# -- code sample
+  dynamic/typing.slide
+
+# Dynamic Typing (p2)
+# -- it must be a duck...
+# -- code sample
+  dynamic/typing-2.slide
+
+# Introspection
+# -- code sample
+  dynamic/introspection.slide
+
+# Method Redefinition
+# -- super simple to patch libraries
+# -- code sample
+#  dynamic/method-redefinition.slide
+
+# Modules vs. Inheritance
+# -- Enumerable
+# -- code sample
+#  dynamic/modules-vs-inheritance.slide
+
+# Domain Specific Languages
+# -- meta-programming
+# -- code sample: Active Record
+  dynamic/domain-languages.slide
+
+# Method_Missing, etc...
+# -- code sample
+# -- etc: constant_missing
+  dynamic/method-missing.slide
+
+#consistency.slide
+#  consistency/everything-is-an-object.slide
+#  consistency/inside-and-out.slide
+
+#powerful-core-api.slide
+#  core-api/arrays.slide
+#  core-api/hashes.slide
+#  core-api/enumerable.slide
+#  core-api/open.slide
+
+#fun-stdlib.slide
+#  std-lib/open-uri.slide
+#  std-lib/cgi.slide
+
+#a-better-programmer.slide
+#simplicity-is-power.slide
+
+# A solution for every letter of MVC
+# -- M: Active Record
+# -- V: Action View
+# -- C: Controller
+  rails.slide
+  rails/diagram.slide
+
+# Model: Active Record
+# -- guest book entry code sample
+# -- database table code sample
+  rails/active-record.slide
+  rails/active-record-2.slide
+
+# Controller: Action Controller
+# -- 1 part of the guest book controller
+  rails/action-controller.slide
+
+# View: Action View
+# -- embeded ruby vs. it's own templating language
+# -- guest book index code sample
+  rails/action-view.slide
+
+# Demo
+# -- Ruby and Rails are already installed
+# -- Generate the Rails App
+# -- Build a Guestbook Controller
+# -- Generate the Entry model
+# -- Create a table for Entries
+# -- Dress up the views
+  rails/demo.slide
+
+# ~ ~ ~ ~ ~ ~ ~ ~ ~
+# Really Cool Demo
+# ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+
+# Why is it so cool?
+# -- convention over configuration
+# -- rails has it's own domain languages
+# -- rails is smart, it figures out a lot about your application based on your database structure
+  rails/is-cool.slide
+
+# Real World Rails
+# -- It scales well
+# -- Our own experiences
+# -- Other usage
+  rails/real-world.slide
+
+# Where do I go from here?
+# -- Download Ruby: http://ruby-lang.com
+# -- Download Rails: http://rubyonrails.com
+# -- Watch the Rails videos
+# -- Spend an evening trying it out
+# -- It's really not that hard
+# -- Ruby Documentation: http://ruby-doc.org
+what-next.slide
+
+# Questions ? ? ?
+# -- Syntatic Sugar?
+# -- Dynamic vs. static typing?
+# -- More on domain specific languages?
+# -- More on method_missing
+# -- Unit testing
+# -- Blocks
+questions.slide
+
+# Slideshow
+# -- This slideshow is available online here:
+#    http://johnwlong.com/slides/gettothepoint/
+last.slide

@@ -1,0 +1,6 @@
+<h1>What Makes Rails Great?</h1>
+<ul>
+  <li>It uses convention over configuration</li>
+  <li>Its domain-specific languages cut to the chase</li>
+  <li>It uses introspection and other techniques to dynamically wire your objects</li>
+</ul>

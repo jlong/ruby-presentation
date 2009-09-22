@@ -1,0 +1,7 @@
+<h1>Real World Rails</h1>
+
+<ul>
+  <li>It scales well using the traditional Linux/Apache/MySQL stack with FastCGI</li>
+  <li>Easy to customize and patch because of Ruby&#8217;s flexibility</li>
+  <li>It&#8217;s served us well on the job...</li>
+</ul>

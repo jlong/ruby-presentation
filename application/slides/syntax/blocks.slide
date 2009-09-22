@@ -1,0 +1,19 @@
+<h1>Blocks: Ruby&#8217;s Secret Sauce</h1>
+
+<p>Blocks are like anonymous methods:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># Print out a list of of people from</div>
+    <div class="comment"># each person in the Array</div>
+    <div>people<span class="op">.</span>each <span class="keyword">do</span> <span class="op">|</span>person<span class="op">|</span></div>
+    <div>&nbsp;&nbsp;puts <span class="string">"* #{</span>person<span class="op">.</span>name<span class="string">}"</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># A block using the bracket syntax </div>
+    <div><span class="number">5</span><span class="op">.</span>times <span class="op">{</span> puts <span class="string">"Ruby rocks!"</span> <span class="op">}</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># Custom sorting </div>
+    <div><span class="op">[</span><span class="number">2</span><span class="op">,</span><span class="number">1</span><span class="op">,</span><span class="number">3</span><span class="op">]</span><span class="op">.</span>sort! <span class="op">{</span> <span class="op">|</span>a<span class="op">,</span> b<span class="op">|</span> b <span class="op"><=></span> a  <span class="op">}</span></div>
+  </div>
+</div>

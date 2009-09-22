@@ -1,0 +1,5 @@
+<h1>How it Works</h1>
+
+<p>The Rails request cycle:</p>
+
+<div><img src="/images/rails-diagram.gif" /></div>

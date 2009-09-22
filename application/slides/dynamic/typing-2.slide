@@ -1,0 +1,17 @@
+<h1>Dynamic Typing <small>(p2)</small></h1>
+<p>&#8230;it must be a duck.</p>
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">def</span> quack_em<span class="op">(</span>ducks<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;ducks<span class="op">.</span>each <span class="keyword">do</span> <span class="op">|</span>duck<span class="op">|</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> duck<span class="op">.</span>respond_to?</span> <span class="symbol">:quack</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duck<span class="op">.</span>quack</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>birds <span class="op">=</span> <span class="op">[</span>Duck<span class="op">.</span>new<span class="op">,</span> Mallard<span class="op">.</span>new<span class="op">,</span> Object<span class="op">.</span>new<span class="op">]</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>quack_em<span class="op">(</span>birds<span class="op">)</span></div>
+  </div>
+</div>

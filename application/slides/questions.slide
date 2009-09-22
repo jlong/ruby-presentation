@@ -1,0 +1,9 @@
+<h1>Questions?</h1>
+<ul>
+  <li>Syntactic sugar?</li>
+  <li>Dynamic vs. static typing?</li>
+  <li>Meta-programming and domain-specific languages?</li>
+  <li>More on <tt>method_missing</tt>?</li>
+  <li>Unit testing?</li>
+  <li>Blocks and closures?</li>
+</ul>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="824.11">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">have all applications quit, no webrick running</p>
+<p class="p1">set TextMate and Terminal to 14-point Monaco text anti-aliased</p>
+<p class="p1">rm -rf ~/Sites/demo</p>
+<p class="p1">have DB databases acm_demo and acm_demo_test empty</p>
+<p class="p1">have CocoaMySQL up on local DB</p>
+<p class="p1">make super sure there's a backup of the presentation/template folder somewhere</p>
+<p class="p2"><br></p>
+<p class="p1"><b>Begin!</b></p>
+<p class="p2"><br></p>
+<p class="p1"><b>Terminal: </b>cd ~/Sites</p>
+<p class="p1">rails demo</p>
+<p class="p1">cd demo</p>
+<p class="p1">./script/server</p>
+<p class="p1"><b>browser:</b> http://localhost:3000/ (congrats page)</p>
+<p class="p1"><b>browser:</b> http://localhost:3000/guestbook<span class="Apple-converted-space">  </span>(fails)</p>
+<p class="p2"><br></p>
+<p class="p1"><b>open another terminal window</b></p>
+<p class="p1">cd ~/Sites/demo</p>
+<p class="p1">script/generate controller Guestbook</p>
+<p class="p1"><b>talk through output</b></p>
+<p class="p1"><b>browser: </b>reload /guestbook (no action for index)</p>
+<p class="p1"><b>Terminal: </b>tm .</p>
+<p class="p1"><b>TextMate: </b>add index method to controller</p>
+<p class="p1"><b>browser: </b>reload /guestbook (wants index.rhtml)</p>
+<p class="p1"><b>TextMate:</b> create index.rhtml with "hi world!"</p>
+<p class="p2"><br></p>
+<p class="p1"><b>LAYOUT</b></p>
+<p class="p1">open ~/Sites</p>
+<p class="p1"><b>Finder:</b> command-click to open a second window for presentation/template</p>
+<p class="p1">navigate first window to demo/public</p>
+<p class="p1"><b>copy</b> template materials into public</p>
+<p class="p1"><b>browser:</b> visit /mockup.html</p>
+<p class="p1"><b>TextMate: </b>open public/mockup.html, select all, copy</p>
+<p class="p1">create app/views/layouts/main.<b>r</b>html as a blank page</p>
+<p class="p1">paste &amp; delete code for entries and form</p>
+<p class="p1">add &lt;%= @content_for_layout %&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">put this into guestbook_controller:</p>
+<p class="p1"><span class="Apple-converted-space">  </span>layout "main"</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><b>reload</b> (hi world! is beautiful)</p>
+<p class="p2"><br></p>
+<p class="p1"><b>ADDING THE FORM</b></p>
+<p class="p1">copy &amp; paste the form from mockup.html into index.rhtml</p>
+<p class="p1">replace: start_form_tag, text_field, text_area, submit_tag, end_form_tag</p>
+<p class="p2"><br></p>
+<p class="p1"><b>reload</b> (renders nicely)</p>
+<p class="p1">fill in some data</p>
+<p class="p1">submit (no action for sign)</p>
+<p class="p1"><b>TextMate:</b> add sign method to controller</p>
+<p class="p1"><b>reload</b> (wants an rhtml, we don't want sign to render)</p>
+<p class="p1">edit sign method to redirect to action: index</p>
+<p class="p1"><b>reload</b> (now works, but does nothing with the new data)</p>
+<p class="p2"><br></p>
+<p class="p1"><b>SAVE THE DATA</b></p>
+<p class="p1">write the AR code in the sign method</p>
+<p class="p1"><b>reload</b> (no Entry class)</p>
+<p class="p1"><b>Terminal: </b>script/generate model Entry</p>
+<p class="p1"><b>reload </b>(unknown database)</p>
+<p class="p1"><b>TextMate:</b> fix config/database.yml to point to acm_demo database</p>
+<p class="p1"><b>restart Webrick</b></p>
+<p class="p1"><b>reload</b> (entries table doesn't exist)</p>
+<p class="p1">add entries table with id autoincrement</p>
+<p class="p1"><b>reload </b>(name= undefined)</p>
+<p class="p1">add name varchar, comment text, created_at datetime</p>
+<p class="p1"><b>reload </b>(works, back to showing no change)</p>
+<p class="p2"><br></p>
+<p class="p1"><b>SHOW ENTRIES</b></p>
+<p class="p1">copy &amp; paste an entry from mockup.html into index.rhtml</p>
+<p class="p1">surround entry with for loop</p>
+<p class="p1">replace fields with h-escaped fetches from entry, time with time_ago_in_words(entry.created_at)</p>
+<p class="p1"><b>reload</b> (unexpected nil @entries)</p>
+<p class="p1">load entries in controller#index</p>
+<p class="p2"><br></p>
+<p class="p1"><b>reload </b>(et voila)</p>
+</body>
+</html>

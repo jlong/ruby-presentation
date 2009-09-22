@@ -1,0 +1,19 @@
+<h1>Active Record <small>(p2)</small></h1>
+
+<p>You can do this:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">class</span> Entry <span class="op">&lt;</span> ActiveRecord<span class="op">::</span>Base</div>
+    <div class="comment">&nbsp;&nbsp;# nothing here!</div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>entry <span class="op">=</span> Entry<span class="op">.</span>new</div>
+    <div>entry<span class="op">.</span>name <span class="op">=</span> <span class="string">"John"</span></div>
+    <div>entry<span class="op">.</span>comments <span class="op">=</span> <span class="string">"What a great Web site!"</span></div>
+    <div>entry<span class="op">.</span>save</div>
+    <div class="blank-line">&nbsp;</div>
+    <div>entry <span class="op">=</span> Entry<span class="op">.</span>find<span class="op">(</span><span class="number">1</span><span class="op">)</span></div>
+    <div>puts entry<span class="op">.</span>name <span class="comment"># output: "John"</span></div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<h1>Action View</h1>
+
+<p>Uses embedded Ruby instead of its own templating language.</p>
+
+<div class="code-window">
+  <div class="code">
+    <div>&lt;html&gt;</div>
+    <div>&nbsp;&nbsp;&lt;body&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Guestbook&lt;/h1&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;%</span> <span class="keyword">for</span> e <span class="keyword">in</span> <span class="op">@</span>entries <span class="keyword">%&gt;</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="keyword">&lt;%=</span> e<span class="op">.</span>name <span class="keyword">%&gt;</span>: <span class="keyword">&lt;%=</span> e<span class="op">.</span>comments <span class="keyword">%&gt;</span>&lt;/p&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">&lt;%</span> <span class="keyword">end</span> <span class="keyword">%&gt;</span></div>
+    <div>&nbsp;&nbsp;&lt;/body&gt;</div>
+    <div>&lt;/html&gt;</div>
+  </div>
+</div>

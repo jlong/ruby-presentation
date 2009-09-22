@@ -1,0 +1,14 @@
+<h1>Ruby on Rails</h1>
+<p>Rails libraries form a dynamic MVC framework:</p>
+<ul>
+  <li><strong>Active Record</strong> provides a database-driven Model</li>
+  <li>
+    <strong>Action Pack</strong> provides a tightly-integrated View and Controller: <strong>Action View</strong> and <strong>Action Controller</strong>
+  </li>
+</ul>
+
+<p>Plus some:</p>
+<ul>
+  <li>Action Mailer</li>
+  <li>Action Web Service</li>
+</ul>

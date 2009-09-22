@@ -1,0 +1,21 @@
+<h1>Method Missing, etc.</h1>
+
+<p>A simple proxy object:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">class</span> Proxy</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> initialize<span class="op">(</span>object<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">@</span>object <span class="op">=</span> object</div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> method_missing<span class="op">(</span>symbol<span class="op">,</span> <span class="op">*</span>args<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">@</span>object<span class="op">.</span>send<span class="op">(</span>symbol<span class="op">,</span> <span class="op">*</span>args<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>object <span class="op">=</span> <span class="op">[</span><span class="string">"a"</span><span class="op">,</span> <span class="string">"b"</span><span class="op">,</span> <span class="string">"c"</span><span class="op">]</span></div>
+    <div>proxy <span class="op">=</span> Proxy<span class="op">.</span>new<span class="op">(</span>object<span class="op">)</span></div>
+    <div>puts proxy<span class="op">.</span>first <span class="comment"># Outputs: "a"</div>
+  </div>
+</div>

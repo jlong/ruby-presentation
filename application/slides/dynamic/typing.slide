@@ -1,0 +1,20 @@
+<h1>Dynamic Typing</h1>
+<p>If it quacks like a duck&#8230;</p>
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># The Duck class</div>
+    <div><span class="keyword">class</span> Duck</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> quack</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;puts <span class="string">"quack!"</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># The Mallard class (without inheritance)</div>
+    <div><span class="keyword">class</span> Mallard</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> quack</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;puts <span class="string">"qwuaacck!! quak!"</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+  </div>
+</div>

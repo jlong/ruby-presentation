@@ -1,0 +1,9 @@
+<h1>Guestbook Application Demo</h1>
+<p>Let&#8217;s build a little application from scratch.</p>
+<ol>
+  <li>Generate the Rails application skeleton</li>
+  <li>Build a Guestbook controller</li>
+  <li>Generate the Entry model</li>
+  <li>Create a table for entries</li>
+  <li>Dress up the views</li>
+</ol>

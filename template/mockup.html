@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Guestbook</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/guestbook.css" />
+  </head>
+  <body>
+    <div id="application">
+      <div id="header">
+        <h1>Guestbook</h1>
+      </div>
+      <div class="entry">
+        <p><strong class="name">John:</strong> <span class="comment">Wow. Nice application.</span></p>
+        <p class="info">Posted 3 minutes ago</p>
+      </div>
+      <hr />
+      <div class="entry">
+        <p><strong class="name">Ryan:</strong> <span class="comment">This is sweet!</span></p>
+        <p class="info">Posted 5 minutes ago</p>
+      </div>
+      <hr />
+      <div class="entry">
+        <p><strong class="name">John:</strong> <span class="comment">Hello world!</span></p>
+        <p class="info">Posted 10 minutes ago</p>
+      </div>
+      <hr />
+      <div class="box">
+        <form action="sign">
+          <h3>Sign My Guestbook</h3>
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td>
+                <label>Name:</label>
+                <span class="field"><input type="text" /></span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label>Comment:</label>
+                <textarea></textarea>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Save posting" />
+        </form>
+      </div>
+    </div>
+    <hr class="hidden" />
+    <div id="footer">
+      <div id="navigation">
+        <p>
+          <a id="logo" href="/"><img src="/images/ruby.gif"></a>
+          <a id="home" href="/">Get to the Point!</a>
+          <span class="separator">|</span>
+          <a id="ruby-lang" href="http://www.ruby-lang.org">www.ruby-lang.org</a>
+          <span class="separator hidden">|</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

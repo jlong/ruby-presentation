@@ -1,0 +1,9 @@
+<h1>Ruby is Highly Dynamic</h1>
+<ul>
+  <li>Uses dynamic typing (vs. static)</li>
+  <li>Full support for introspection</li>
+  <li>Support for method redefinition</li>
+  <li>Create your own domain-specific languages</li>
+  <li>Modules vs. multiple inheritance</li>
+  <li><tt>method_missing</tt>, etc...</li>
+</ul>

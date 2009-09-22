@@ -1,0 +1,13 @@
+<h1>Domain-Specific Languages</h1>
+
+<p>Ruby&#8217;s simple and powerful conceptual foundation allows for the creation of simple sub-languages called <em>domain-specific languages</em>.</p>
+<p>Here&#8217;s an example from Rails:</p>
+<div class="code-window">
+  <div class="code">
+    <div><span class="keyword">class</span> Firm <span class="op">&lt;</span> ActiveRecord<span class="op">::</span>Base</div>
+    <div>&nbsp;&nbsp;has_many&nbsp;&nbsp; <span class="symbol">:clients</span></div>
+    <div>&nbsp;&nbsp;has_one&nbsp;&nbsp;&nbsp; <span class="symbol">:account</span></div>
+    <div>&nbsp;&nbsp;belongs_to <span class="symbol">:conglomorate</span></div>
+    <div><span class="keyword">end</span></div>
+  </div>
+</div>

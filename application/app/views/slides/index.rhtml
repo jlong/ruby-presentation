@@ -1,0 +1,8 @@
+<% @title = "Slide Index" -%>
+<h1>Slides</h1>
+<ul>
+<% @slides.each do |slide| %>
+  <li><a href="<%= url_for :action => 'view', :id => slide.index %>"><%= slide.title %></a></li>
+<% end %>
+</ul>
+<% @slide = false %>

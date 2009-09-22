@@ -1,0 +1,15 @@
+<h1>Regular Expressions</h1>
+<p>Ruby supports Perl-style regular expressions:</p>
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># Extract the parts of a phone number</div>
+    <div class="blank-line">&nbsp;</div>
+    <div>phone <span class="op">=</span> <span class="string">"123-456-7890"</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div><span class="keyword">if</span> phone <span class="op">=~</span> <span class="regexp">/(\d{3})-(\d{3})-(\d{4})/</span></div>
+    <div>&nbsp;&nbsp;ext&nbsp; <span class="op">=</span> <span class="op">$</span>1</div>
+    <div>&nbsp;&nbsp;city <span class="op">=</span> <span class="op">$</span>2</div>
+    <div>&nbsp;&nbsp;num&nbsp; <span class="op">=</span> <span class="op">$</span>3</div>
+    <div><span class="keyword">end</span></div>
+  </div>
+</div>

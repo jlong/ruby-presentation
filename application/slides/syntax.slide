@@ -1,0 +1,18 @@
+h1. Squeaky Clean Syntax
+
+* Ruby is purely object-oriented
+* Everything is an object
+* Even strings and numbers!
+
+<code>
+# Output "UPPER"
+puts "upper".upcase
+
+# Output the absolute value of -5:
+puts -5.abs
+
+# Output "Ruby Rocks!" 5 times
+5.times do
+  puts "Ruby Rocks!"
+end
+</code>

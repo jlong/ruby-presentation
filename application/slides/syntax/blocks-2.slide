@@ -1,0 +1,17 @@
+<h1>Yield to the Block!</h1>
+
+<p>Use <tt>yield</tt> from within a method to hand control over to a block:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># define the thrice method</div>
+    <div><span class="keyword">def</span> thrice</div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># Output "Blocks are cool!" three times</div>
+    <div>thrice <span class="op">{</span> puts <span class="string">"Blocks are cool!"</span> <span class="op">}</span></div>
+  </div>
+</div>

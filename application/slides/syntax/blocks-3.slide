@@ -1,0 +1,20 @@
+<h1>Blocks With Parameters</h1>
+
+<p>You can also use parameters with <tt>yield</tt>:</p>
+
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># redefine the thrice method</div>
+    <div><span class="keyword">def</span> thrice</div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span><span class="op">(</span><span class="number">1</span><span class="op">)</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span><span class="op">(</span><span class="number">2</span><span class="op">)</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">yield</span><span class="op">(</span><span class="number">3</span><span class="op">)</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># Output "Blocks are cool!" three times,</div>
+    <div class="comment"># prefix it with the count</div>
+    <div>thrice <span class="op">{</span> <span class="op">|</span> i <span class="op">|</span></div>
+    <div>&nbsp;&nbsp;puts <span class="string">"#{</span>i<span class="string">}: Blocks are cool!"</span></div>
+    <div><span class="op">}</span></div>
+  </div>
+</div>

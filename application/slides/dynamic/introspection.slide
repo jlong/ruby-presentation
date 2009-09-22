@@ -1,0 +1,19 @@
+<h1>Introspection</h1>
+
+<p>What are the methods of the object?</p>
+<div class="code-window">
+  <div class="code">
+    <div><span class="op">irb&gt;</span> Object<span class="op">.</span>methods</div>
+    <div><span class="op">=&gt;</span> <span class="op">[</span><span class="string">"send"</span><span class="op">,</span> <span class="string">"name"</span><span class="op">,</span> <span class="string">"class_eval"</span><span class="op">,</span> <span class="string">"object_id"</span><span class="op">,</span> <span class="string">"new"</span><span class="op">,</span> <span class="string">"singleton_methods"</span><span class="op">,</span> <span class="op">...</span><span class="op">]</span></div>
+    <div class="blank-line">&nbsp;</div>
+  </div>
+</div>
+
+<p>Does an object have a method?</p>
+<div class="code-window">
+  <div class="code">
+    <div><span class="op">irb&gt;</span> Object<span class="op">.</span>respond_to? <span class="symbol">:name</span></div>
+    <div><span class="op">=&gt;</span> true</div>
+    <div class="blank-line">&nbsp;</div>
+  </div>
+</div>

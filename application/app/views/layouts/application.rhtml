@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <% if @title -%>
+    <title><%= @title %></title>
+    <% else -%>
+    <title>Get to the Point! Development with Ruby and Rails</title>
+    <% end -%>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+    <style type="text/css">
+    <!--
+      a { color: white; }
+      a:visited { color: #a1b3c6; }
+      body {
+        color: white;
+        background-color: #144070;
+        background-image: url(/images/background.gif);
+        background-position: right;
+        background-repeat: repeat-y;
+        font-family: Verdana, Arial, Geneva, Helvitica, sans-serif;
+        font-size: 170%;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+      }
+      h1 {
+        font-size: 150%;
+        margin: 0;
+        margin-bottom: .25em;
+      }
+      p {
+        margin-top: 1em;
+        margin-bottom: .5em;
+      }
+      ul {
+        list-style: inside;
+        margin: 0;
+        margin-top: 1em
+        margin-bottom: .5em;
+        padding: 0;
+      }
+      li {
+        margin: 0;
+        margin-top: .5em;
+        margin-bottom: .5em;
+      }
+      code {
+        font-size: 150%;
+        border-bottom: 2px dotted #f9bb00;
+      }
+      .hidden {
+        display: none!important;
+      }
+      .code-window {
+        color: white;
+        background-image: url(/images/code-bottom-right.gif);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        display: block;
+        font-size: 80%;
+        line-height: 100%;
+        padding-bottom: 32px;
+      }
+      .code-window .code {
+        background-color: #213449;
+        background-image: url(/images/code-top-left.gif);
+        background-position: top left;
+        background-repeat: no-repeat;
+        display: block;
+        padding: 32px;
+        padding-bottom: 0;
+      }
+      .code div {
+        display: block;
+        font-family: "Lucida Console", Monaco, "Courier New", Courier, monospace;
+      }
+      .code .keyword {
+        color: #f9bb00;
+      }
+      .code .comment {
+        color: #428bdd;
+      }
+      .code .string {
+        color: #00cc00;
+      }
+      .code .number {
+        color: #cccc00;
+      }
+      .code .regexp {
+        color: #eef;
+      }
+      .code .symbol {
+        color: #9ff;
+      }
+      .code .op {
+        color: #abc;
+      }
+      .code .blank-line {
+        line-height: 70%;
+      }
+
+      code {
+        font-size: 150%;
+        border-bottom: 2px dotted #f9bb00;
+      }
+      .hidden {
+        display: none!important;
+      }
+      #slide, #navigation {
+        width: 24em;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #slide {
+        min-height: 17.75em;
+      }
+      #footer {
+        background-image: url(/images/stripe.png);
+        background-repeat: repeat-x;
+        display: block;
+        float: left;
+        margin-top: 1em;
+        width: 100%;
+      }
+      #navigation p {
+        font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+        font-size: 15px;
+        margin-top: 15px;
+        width: 100%;
+      }
+      #navigation a {
+        color: white;
+        display: block;
+        float: left;
+        text-decoration: none;
+      }
+      #navigation a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      #navigation .separator {
+        display: block;
+        float: left;
+      }
+      #logo {
+        float: left;
+      }
+      a#logo {
+        margin: 0;
+        margin-top: -15px;
+      }
+      #logo img {
+        border: 0;
+      }
+      #home {
+        font-size: 20px;
+        margin-top: -2px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #ruby-lang {
+        font-style: italic;
+        margin-left: 10px;
+      }
+      #prev-next {
+        display: block;
+        float: right;
+        width: 110px;
+        height: 30px;
+      }
+      #prev, #next {
+        margin-top: -15px;
+        width: 53px;
+        height: 53px;
+      }
+      #prev span, #next span {
+        display: none;
+      }
+      #prev {
+        background-image: url(/images/prev.gif);
+        margin-right: 4px;
+      }
+      #next {
+        background-image: url(/images/next.gif);
+      }
+    -->
+    </style>
+  </head>
+  <body>
+    <div id="slide">
+<%= @content_for_layout %>
+    </div>
+    <hr class="hidden" />
+    <div id="footer">
+      <div id="navigation">
+        <p>
+          <a id="logo" href="/"><img src="/images/ruby.gif"></a>
+          <a id="home" href="/">Get to the Point!</a>
+          <span class="separator">|</span>
+          <a id="ruby-lang" href="http://www.ruby-lang.org">www.ruby-lang.org</a>
+          <span class="separator hidden">|</span>
+<% if @slide -%>
+          <span id="prev-next">
+  <% if @slide.previous -%>
+            <a id="prev" href="<%= url_for :action => 'view', :id => @slide.previous %>" title="Previous Slide"><span>&lt;&lt; Previous</span></a>
+  <% else %>
+  <a id="prev" href="<%= url_for :action => 'index' %>" title="Index"><span>&lt;&lt; Index</span></a>
+  <% end -%>
+			<span class="separator hidden">|</span>
+  <% if @slide.next %>
+            <a id="next" href="<%= url_for :action => 'view', :id => @slide.next %>" title="Next Slide"><span>Next &gt;&gt;</span></a>
+  <% else -%>
+            <a id="next" href="<%= url_for :action => 'index' %>" title="Index"><span>Index &gt;&gt;</span></a>
+  <% end %>
+          </span>
+<% end -%>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

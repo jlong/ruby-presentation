@@ -1,0 +1,22 @@
+<h1>Classes and Methods <small>(p2)</small></h1>
+
+<div class="code-window">
+  <div class="code">
+    <div class="comment"># The Greeter class</div>
+    <div><span class="keyword">class</span> Greeter</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> initialize<span class="op">(</span>greeting<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">@</span>greeting <span class="op">=</span> greeting</div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div>&nbsp;&nbsp;<span class="keyword">def</span> salute<span class="op">(</span>name<span class="op">)</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;puts <span class="string">"#{</span><span class="op">@</span>greeting<span class="string">} #{</span>name<span class="string">}!"</span></div>
+    <div>&nbsp;&nbsp;<span class="keyword">end</span></div>
+    <div><span class="keyword">end</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># Initialize our Greeter</div>
+    <div>g <span class="op">=</span> Greeter<span class="op">.</span>new<span class="op">(</span><span class="string">"Hello"</span><span class="op">)</span></div>
+    <div class="blank-line">&nbsp;</div>
+    <div class="comment"># Output "Hello World!"</div>
+    <div>g<span class="op">.</span>salute<span class="op">(</span><span class="string">"World"</span><span class="op">)</span></div>
+  </div>
+</div>

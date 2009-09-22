@@ -1,0 +1,21 @@
+<h1>Classes and Methods</h1>
+
+<p>Classes begin with <tt>class</tt> and end with <tt>end</tt>:</p>
+
+<div class="code-window">
+<div class="code">
+<div class="comment"># The Greeter class</div>
+<div><span class="keyword">class</span> Greeter</div>
+<div><span class="keyword">end</span></div>
+</div>
+</div>
+
+<p>Methods begin with <tt>def</tt> and end with <tt>end</tt>:</p>
+
+<div class="code-window">
+<div class="code">
+<div class="comment"># The salute method</div>
+<div><span class="keyword">def</span> salute</div>
+<div><span class="keyword">end</span></div>
+</div>
+</div>
